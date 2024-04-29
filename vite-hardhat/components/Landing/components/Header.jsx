@@ -26,7 +26,7 @@ const Header = () => {
             <div className="text-gray-500 text-xl self-stretch">Pricing</div>
           </div>
           <a
-            href="/app"
+            href="/verify"
             className="text-white bg-blue-500 text-xl hidden lg:flex font-bold self-stretch whitespace-nowrap justify-center items-center bg-cs-light-purple px-6 py-3 rounded-xl max-md:px-5"
           >
             Enter App
