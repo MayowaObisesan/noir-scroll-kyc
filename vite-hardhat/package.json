@@ -8,7 +8,7 @@
     "dev": "yarn prep && hardhat compile && yarn deploy && vite",
     "build": "hardhat compile && yarn deploy && vite build",
     "preview": "vite preview",
-    "deploy": "hardhat compile && NODE_OPTIONS='--experimental-loader ts-node/esm/transpile-only' hardhat run --network ${NETWORK:-localhost} scripts/deploy.ts",
+    "deploy": "hardhat compile && NODE_OPTIONS='--experimental-loader ts-node/esm/transpile-only' hardhat run --network ${NETWORK:-scroll-testnet} scripts/deploy.ts",
     "test": "NODE_OPTIONS='--experimental-loader ts-node/esm/transpile-only' hardhat test"
   },
   "dependencies": {
@@ -24,9 +24,11 @@
     "@nomicfoundation/hardhat-viem": "1.0.0",
     "dotenv": "^16.0.3",
     "hardhat": "^2.19.2",
+    "persona": "^5.0.0-alpha.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.1.0",
+    "react-router-dom": "^6.23.0",
     "react-toastify": "^9.1.1",
     "typechain": "^8.1.0",
     "viem": "1.16.6"
@@ -41,6 +43,7 @@
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.19",
     "chai": "^4.2.0",
+    "daisyui": "^4.10.2",
     "hardhat-gas-reporter": "^1.0.9",
     "postcss": "^8.4.38",
     "solidity-coverage": "^0.8.5",
