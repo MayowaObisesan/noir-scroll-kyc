@@ -25,6 +25,7 @@ function Component() {
 
   const [fields, setFields] = useState<any>();
   const [showKycHash, setShowKycHash] = useState<string>();
+  const [showKycId, setShowKycId] = useState<string>();
   const { noir, proofData } = useProofGeneration(input);
   useOffChainVerification(noir, proofData);
   useOnChainVerification(proofData);
@@ -67,6 +68,7 @@ function Component() {
 
     // setInput({ x: x.value, y: y.value });
     const fullnameBytes = convertToByte(fullname.value);
+    console.log(nationality.value);
     const nationalityBytes = convertToByte(nationality.value);
     const kycIdBytes = convertToByte(kycId.value.replace('inq_', ''));
     const fullnameBytesInt = BigInt(fullnameBytes.toString().replaceAll(',', ''));
@@ -105,9 +107,11 @@ function Component() {
       console.log(`Sending finished inquiry ${inquiryId} to backend`);
       console.log(fields);
       const fullnameBytes = convertToByte(
-        fields['name-first'].value + '' + fields['name-last'].value,
+        fields['name-first'].value + ' ' + fields['name-last'].value,
       );
-      const nationalityBytes = convertToByte(fields['birthdate'].value);
+      // const nationalityBytes = convertToByte(fields['birthdate'].value);
+      console.log(fields['selected-country-code'].value.toLowerCase());
+      const nationalityBytes = convertToByte(fields['selected-country-code'].value.toLowerCase());
       const kycIdBytes = convertToByte(inquiryId.replace('inq_', ''));
       const fullnameBytesInt = BigInt(fullnameBytes.toString().replaceAll(',', ''));
       const nationalityBytesInt = BigInt(nationalityBytes.toString().replaceAll(',', ''));
@@ -126,6 +130,7 @@ function Component() {
       console.log(bytesToNumber(kh.value), kh.toString());
       console.log(bytesToBigInt(kh.value));
       setShowKycHash(kh.toString());
+      setShowKycId(inquiryId.replace('inq_', ''));
     },
   });
 
@@ -140,7 +145,7 @@ function Component() {
     <div className="">
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">Iris</a>
+          <a className="btn btn-ghost text-xl">zkID</a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
@@ -178,9 +183,10 @@ function Component() {
       <input name="y" type="text" /> */}
         {showKycHash && (
           <div className="alert alert-warning flex flex-col">
-            Kindly keep this private. It will be required to verify your details on different
-            platforms
-            <div className="font-bold">{showKycHash}</div>
+            Kindly keep the below keys private. It will be required to verify your details on
+            different platforms
+            <div className="font-bold">Secret Hash: {showKycHash}</div>
+            <div className="font-bold">ID: {showKycId}</div>
           </div>
         )}
         <div className="form-control gap-y-8 px-8">
