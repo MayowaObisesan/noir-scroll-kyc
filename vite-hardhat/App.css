@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Irish+Grover&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.irish {
+  font-family: 'Irish Grover', system-ui;
+}
+
+.anonymous {
+  font-family: "Anonymous Pro", monospace;
+}
+
+.josefin {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 body {
   margin: 0;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .faded {
