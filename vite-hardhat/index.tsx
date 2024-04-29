@@ -4,6 +4,7 @@ import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import Component from './components/index';
+import Landing from './components/Landing/landing'
 import initNoirC from '@noir-lang/noirc_abi';
 import initACVM from '@noir-lang/acvm_js';
 import { WagmiConfig } from 'wagmi';
@@ -35,7 +36,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Providers>
     <InitWasm>
-      <Component />
+      {/* <Component /> */}
+      <Landing/>
       <ToastContainer />
     </InitWasm>
   </Providers>,
