@@ -3,7 +3,7 @@ import id_img from '../../../assets/unsplash.png';
 
 const Hero = () => {
   return (
-    <div className="justify-center items-center self-stretch flex w-full flex-col px-20 max-md:max-w-full max-lg:px-8">
+    <div className="justify-center items-center self-stretch flex w-full flex-col px-20 max-md:max-w-full max-lg:px-8 overflow-hidden">
       <div className="items-start self-center flex w-full flex-col max-md:max-w-full">
         <div className="justify-between self-stretch max-md:max-w-full">
           <div className="gap-5 flex justify-between max-md:flex-col max-md:items-stretch max-md:gap-0">
@@ -22,14 +22,14 @@ const Hero = () => {
                 <div className="items-start flex max-w-full justify-between gap-5 mt-14 self-start max-md:flex-wrap max-md:mt-10 max-sm:gap-2 max-sm:mt-8">
                   <a
                     href="/"
-                    className="text-white text-xl font-bold self-center whitespace-nowrap justify-center items-center bg-cs-light-purple flex-1 px-7 py-3 rounded-2xl max-md:px-5 max-sm:text-sm max-sm:px-4 max-sm:py-2 max-sm:rounded-xl"
+                    className="text-white bg-blue-500 text-xl font-bold self-center whitespace-nowrap justify-center items-center bg-cs-light-purple flex-1 px-7 py-3 rounded-2xl max-md:px-5 max-sm:text-sm max-sm:px-4 max-sm:py-2 max-sm:rounded-xl"
                   >
                     Enter App
                   </a>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-stretch w-[90%] translate-x-40 ml-5 max-md:w-full max-md:ml-0">
+            <div className="flex flex-col w-[90%] translate-x-40 ml-5 max-md:w-full max-md:ml-0">
               <img
                 loading="lazy"
                 src={id_img}

@@ -12,7 +12,7 @@ const Header = () => {
         <div className="justify-between items-center self-center flex w-full gap-5 max-md:max-w-full max-md:flex-wrap">
           <a
             href="/"
-            className="text-3xl font-bold major-flex gap-2 bg-clip-text max-md:text-2xl max-sm:text-xl"
+            className="text-3xl irish font-bold major-flex gap-2 bg-clip-text max-md:text-2xl max-sm:text-xl"
           >
             {/* <SiHiveBlockchain className="text-cs-light-purple" /> */}
             zk<span className='text-blue-500'>ID</span>
