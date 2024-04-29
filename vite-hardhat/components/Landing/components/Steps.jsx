@@ -50,12 +50,12 @@ const Steps = () => {
     <div className="justify-center items-center self-stretch flex w-full flex-col px-20 pt-16 max-md:max-w-full max-md:px-8 max-sm:pt-0">
       <div className="items-center self-center flex w-full flex-col p-8 max-md:max-w-full max-md:px-5">
         <div className="items-center self-center flex  flex-col">
-          <div className="text-orange-400 text-4xl font-bold self-center whitespace-nowrap max-md:text-3xl max-sm:text-xl">
+          <div className="text-4xl font-bold self-center whitespace-nowrap max-md:text-3xl max-sm:text-xl">
             <span>How zk</span><span className="text-blue-500">ID </span>
-            <span className="text-orange-400">works</span>
+            <span> works</span>
           </div>
           <div className="text-center text-xl self-stretch mt-4 max-md:max-w-full max-sm:text-sm">
-            Step-by-step guide on how to set up and use your address watcher
+            Step-by-step guide on how to set up and use zkID
           </div>
         </div>
 

@@ -2,10 +2,9 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Steps from './components/Steps';
-// import Chains from './components/Chains';
-// import Infos from './components/Infos';
-// import Cta from './components/Cta';
-// import Footer from './components/Footer';
+import Chains from './components/Chains';
+import Cta from './components/Cta';
+import Footer from './components/Footer';
 
 const Landing = () => {
   return (
@@ -15,10 +14,9 @@ const Landing = () => {
         <Hero />
         <Features />
         <Steps />
-        {/* <Chains /> */}
-        {/* <Infos /> */}
-        {/* <Cta /> */}
-        {/* <Footer /> */}
+        <Chains />
+        <Cta />
+        <Footer />
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ function Features() {
   ];
 
   return (
-    <div className="justify-center items-center self-stretch flex w-full flex-col px-20 pt-24 max-md:max-w-full max-md:px-5 max-sm:py-8">
+    <div className="justify-center items-center self-stretch flex w-full flex-col px-20 max-md:max-w-full max-md:px-5 max-sm:py-8">
       <div className="items-center self-center flex w-full flex-col max-md:max-w-full">
         <div className="md:w-full text-center text-4xl max-md:text-3xl max-sm:text-xl font-bold self-center whitespace-nowrap">
           <span>zk</span>
