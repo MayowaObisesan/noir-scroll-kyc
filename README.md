@@ -1,6 +1,8 @@
 # Iris Identity (Iris-I)
 
-Welcome to Iris Identity! Iris Identity (Iris-I) is a zk Verifiable Credential (VC) system that allows users to upload and verify their identity and documents in compliance with most jurisdiction's KYC requirements. It also serves as a Decentralized Identity (DID) provider where individuals create, store, and manage digital identities in a secure and privacy-focused system.
+![Image](./IRIS-I.png)
+
+Welcome to **Iris Identity**! Iris Identity (Iris-I) is a zk Verifiable Credential (VC) system that allows users to upload and verify their identity and documents in compliance with most jurisdiction's KYC requirements. It also serves as a Decentralized Identity (DID) provider where individuals create, store, and manage digital identities in a secure and privacy-focused system.
 
 This dapp was developed as a project for the Scroll Vortex hackathon.
 
@@ -27,7 +29,7 @@ Have you ever attempted to sign up to a platform that required KYC but the KYC v
 - **Figma:** https://www.figma.com/file/r08NvIUEG8RnejNhWGot4U/Untitled?type=design&node-id=0%3A1&mode=design&t=gTmGPimdTsOD0pw6-1
 - **Deployed and Verified Contract:** https://sepolia.scrollscan.com/address/0x72f29e57d14b30eeea2e3defb730b0385a7584fe
 
-## Getting Started
+## Getting Started with IRIS-I
 
 To run the application, you can follow the live vercel link, [here](https://noir-scroll-kyc.vercel.app/)
 
