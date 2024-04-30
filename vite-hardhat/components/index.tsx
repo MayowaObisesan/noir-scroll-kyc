@@ -4,7 +4,7 @@ import Persona from 'persona';
 
 import { useOnChainVerification } from '../hooks/useOnChainVerification.jsx';
 import { useProofGeneration } from '../hooks/useProofGeneration.jsx';
-import { useOffChainVerification } from '../hooks/useOffChainVerification.jsx';
+import { useChainVerification } from '../hooks/useOffChainVerification.jsx';
 import { initializeCommitment } from '../utils/generateCommit.js';
 import {
   bytesToBigInt,
@@ -26,10 +26,9 @@ function Component() {
   const [fields, setFields] = useState<any>();
   const [showKycHash, setShowKycHash] = useState<string>();
   const [showKycId, setShowKycId] = useState<string>();
+  const [showFullName, setShowFullName] = useState<string>();
   const { noir, proofData } = useProofGeneration(input);
-  useOffChainVerification(noir, proofData);
-  useOnChainVerification(proofData);
-
+  useChainVerification(noir, proofData);
   function toHexString(byteArray) {
     return Array.from(byteArray, function (byte) {
       return ('0' + (byte & 0xff).toString(16)).slice(-2);
@@ -129,6 +128,7 @@ function Component() {
       console.log(kh);
       console.log(bytesToNumber(kh.value), kh.toString());
       console.log(bytesToBigInt(kh.value));
+      setShowFullName(fields['name-first'].value + ' ' + fields['name-last'].value);
       setShowKycHash(kh.toString());
       setShowKycId(inquiryId.replace('inq_', ''));
     },
@@ -187,6 +187,7 @@ function Component() {
             different platforms
             <div className="font-bold">Secret Hash: {showKycHash}</div>
             <div className="font-bold">ID: {showKycId}</div>
+            <div className="font-bold">FullName: {showFullName}</div>
           </div>
         )}
         <div className="form-control gap-y-8 px-8">
