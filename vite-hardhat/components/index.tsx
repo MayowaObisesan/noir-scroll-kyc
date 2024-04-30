@@ -100,7 +100,7 @@ function Component() {
 
   const client = new Persona.Client({
     templateId: 'itmpl_B8FVEydG1u8wSPKNyVpP7UiWjNq4',
-    environmentId: 'env_N8QZ2aMacnquXVsm1pmRWwz2xSFa',
+    environmentId: 'env_Lwru951K4o3DvRvLcGwyxXSh9hCr',
     onComplete: async ({ inquiryId, status, fields }) => {
       // Inquiry completed. Optionally tell your server about it.
       console.log(`Sending finished inquiry ${inquiryId} to backend`);
