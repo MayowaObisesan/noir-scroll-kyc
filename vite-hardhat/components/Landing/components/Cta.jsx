@@ -22,7 +22,7 @@ const Cta = () => {
                     Verify your onchain identity now
                   </div>
                   <div className="text-zinc-500 text-xl leading-relaxed self-stretch mt-6 max-md:max-w-full max-sm:text-sm max-sm:mt-3">
-                  Verify your identity in a private, decentralised and secure manner using Iris-I
+                  Verify your identity in a private, decentralised and secure manner using iris<span className='text-blue-500 irish'>-I</span>
                   </div>
                 </div>
                 <div className="self-start flex max-w-full justify-center gap-5 mt-10 max-md:flex-wrap max-md:mt-10 max-sm:self-center max-sm:gap-2 max-sm:my-8">
