@@ -18,31 +18,31 @@ const Steps = () => {
       title: 'Connect wallet',
       src: wallet,
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae. Dolore consectetur corrupti nihil maxime ut inventore! Tempore, laudantium aliquid?',
+        'Connect an Ethereum Wallet on the Scroll Network',
     },
     {
       title: 'Submit documents',
       src: verification,
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae. Dolore consectetur corrupti nihil maxime ut inventore! Tempore, laudantium aliquid?',
+        'Submit a valid means of identification as officially issued by the government of your country',
     },
     {
       title: 'Take live selfie',
       src: facial,
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae. Dolore consectetur corrupti nihil maxime ut inventore! Tempore, laudantium aliquid?',
+        'Complete the test of humanity liveness check, follow the prompts provided by the verification modal.',
     },
     {
       title: 'Wait for verification',
       src: hourglass,
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae. Dolore consectetur corrupti nihil maxime ut inventore! Tempore, laudantium aliquid?',
+        'Wait for the identity document and selfie you submitted to be verified, this should take less than 1 minute. It will then also prompt you to sign for onchain verification.',
     },
     {
-        title: 'Voila! Wallet verified',
+        title: 'Voila! ID verified',
         src: checked,
         content:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae. Dolore consectetur corrupti nihil maxime ut inventore! Tempore, laudantium aliquid?',
+          'With onchain verification successful, you will receive a KYC hash to confirm that your identity has been verified.',
       },
   ];
 

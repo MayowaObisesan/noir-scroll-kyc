@@ -1,5 +1,5 @@
-const Chains = () => {
-  const chainData = ['Business', 'Business', 'Business', 'Business', 'Business', 'Business', 'Business'];
+const Industries = () => {
+  const chainData = ['Financial Services', 'Fintech', 'Crypto Exchanges', 'Gaming', 'Real Estate', 'E-Commerce', 'Healthcare'];
 
   return (
     <div className="justify-center items-center self-stretch flex w-full flex-col pt-20 px-12 max-md:max-w-full max-md:px-5 max-sm:pt-10 max-sm:px-6">
@@ -19,4 +19,4 @@ const Chains = () => {
   );
 };
 
-export default Chains;
+export default Industries;

@@ -19,7 +19,7 @@ const Cta = () => {
               <div className="items-start flex flex-col my-auto max-md:max-w-full max-md:mt-10">
                 <div className="items-start flex w-[745px] max-w-full flex-col self-start max-sm:text-center">
                   <div className="text-2xl font-bold self-stretch max-md:max-w-full max-sm:text-base">
-                    Verify your wallet address now
+                    Verify your onchain identity now
                   </div>
                   <div className="text-zinc-500 text-xl leading-relaxed self-stretch mt-6 max-md:max-w-full max-sm:text-sm max-sm:mt-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
