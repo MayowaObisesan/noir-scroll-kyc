@@ -26,8 +26,8 @@ function Features() {
     <div className="justify-center items-center self-stretch flex w-full flex-col px-20 max-md:max-w-full max-md:px-5 max-sm:py-8">
       <div className="items-center self-center flex w-full flex-col max-md:max-w-full">
         <div className="md:w-full text-center text-4xl max-md:text-3xl max-sm:text-xl font-bold self-center whitespace-nowrap">
-          <span>zk</span>
-          <span className="text-blue-500">ID</span>
+          <span>iris</span>
+          <span className="text-blue-500 irish">-I</span>
           <span> is for you</span>
         </div>
         <div className="flex flex-wrap justify-center gap-8 mt-12 max-md:mt-10 max-sm:mt-0 max-sm:gap-0">

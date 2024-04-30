@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Persona from 'persona';
 
 import { useOnChainVerification } from '../hooks/useOnChainVerification.jsx';
@@ -142,10 +143,15 @@ function Component() {
   }
 
   return (
-    <div className="">
+    <div className="px-8 py-6 lg:px-20 lg:py-10">
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">zkID</a>
+        <Link
+            to="/"
+            className="text-3xl font-bold major-flex gap-2 bg-clip-text max-md:text-2xl max-sm:text-xl"
+          >
+            iris<span className='text-blue-500 irish'>-I</span>
+          </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
@@ -174,7 +180,7 @@ function Component() {
         Start KYC Verification
       </button> */}
       <form className="container flex flex-col gap-y-8" onSubmit={submit}>
-        <div className="p-8">
+        <div className="px-4 py-8">
           <h1 className="text-4xl">Verify your Information using ZK</h1>
           <h2>Pass in your data</h2>
         </div>
@@ -189,7 +195,7 @@ function Component() {
             <div className="font-bold">ID: {showKycId}</div>
           </div>
         )}
-        <div className="form-control gap-y-8 px-8">
+        <div className="form-control gap-y-8 px-4">
           <div>
             <label htmlFor="" className="flex flex-col">
               Id
@@ -224,8 +230,8 @@ function Component() {
                 <option value="ng">Nigeria</option>
                 <option value="us">United states</option>
                 <option value="fr">France</option>
-                <option value="ru">Russia</option>
-                <option value="ch">China</option>
+                <option value="ne">Netherland</option>
+                <option value="ja">Japan</option>
               </select>
             </label>
           </div>

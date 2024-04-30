@@ -10,6 +10,7 @@ import initACVM from '@noir-lang/acvm_js';
 import { WagmiConfig } from 'wagmi';
 import { config } from './utils/wagmi';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import About from './components/about';
 
 const InitWasm = ({ children }) => {
   const [init, setInit] = React.useState(false);
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: '/verify',
     element: <Component />,
+  },
+  {
+    path: '/about',
+    element: <About />,
   },
 ]);
 

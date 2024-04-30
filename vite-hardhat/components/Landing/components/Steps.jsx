@@ -51,11 +51,11 @@ const Steps = () => {
       <div className="items-center self-center flex w-full flex-col p-8 max-md:max-w-full max-md:px-5">
         <div className="items-center self-center flex  flex-col">
           <div className="text-4xl font-bold self-center whitespace-nowrap max-md:text-3xl max-sm:text-xl">
-            <span>How zk</span><span className="text-blue-500">ID </span>
+            <span>How iris</span><span className="text-blue-500 irish">-I </span>
             <span> works</span>
           </div>
           <div className="text-center text-xl self-stretch mt-4 max-md:max-w-full max-sm:text-sm">
-            Step-by-step guide on how to set up and use zkID
+            Step-by-step guide on how to set up and use iris<span className='text-blue-500 irish'>-I</span>
           </div>
         </div>
 

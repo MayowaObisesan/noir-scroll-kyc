@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import phone from '../../../assets/phone.png';
 
 const Cta = () => {
@@ -27,12 +27,12 @@ const Cta = () => {
                   </div>
                 </div>
                 <div className="self-start flex max-w-full justify-center gap-5 mt-10 max-md:flex-wrap max-md:mt-10 max-sm:self-center max-sm:gap-2 max-sm:my-8">
-                  <a
-                    href="/"
+                  <Link
+                    to="/verify"
                     className="bg-blue-500 text-white text-xl font-bold self-center whitespace-nowrap justify-center items-center bg-cs-light-purple flex-1 px-7 py-3 rounded-2xl max-md:px-5 max-sm:text-sm max-sm:px-4 max-sm:py-2 max-sm:rounded-xl"
                   >
                     Enter App
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

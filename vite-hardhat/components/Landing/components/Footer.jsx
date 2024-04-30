@@ -10,7 +10,7 @@ const Footer = () => {
               <div className="items-start flex flex-col max-md:mt-10">
                 <div className="items-start self-stretch flex flex-col">
                   <div className="text-4xl font-bold self-stretch whitespace-nowrap max-md:text-3xl max-sm:text-xl">
-                    zk<span className='text-blue-500'>ID</span>
+                    iris<span className='text-blue-500 irish'>-I</span>
                   </div>
                   <div className="text-neutral-400 leading-7 self-stretch mt-4 max-sm:text-sm max-sm:mt-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, vel!
