@@ -11,9 +11,9 @@ export function useChainVerification(noir?: Noir, proofData?: ProofData) {
     if (!proofData || !noir) return;
 
     toast.promise(noir.verifyProof(proofData), {
-      pending: 'Verifying proof on-chain',
-      success: 'Proof verified on-chain',
-      error: 'Error verifying proof on-chain',
+      pending: 'Verifying proof',
+      success: 'Proof verified',
+      error: 'Error verifying proof',
     });
   }, [proofData]);
 }
